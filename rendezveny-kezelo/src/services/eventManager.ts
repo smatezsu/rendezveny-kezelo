@@ -1,3 +1,5 @@
+// RENDEZVÉNYEK LÉTREHOZÁSA, TÖRLÉSE ÉS SZŰRÉSE //
+
 import { Event } from "../models/event";
 import { EventType } from "../models/eventType";
 

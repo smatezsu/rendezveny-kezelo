@@ -1,3 +1,5 @@
+// ESEMÉNY ADATOK //
+
 import { Participant } from "./participant";
 import { EventType } from "./eventType";
 
