@@ -21,4 +21,9 @@ const jane = new Participant("Jane Smith", "jane.smith@example.com");
 participantManager.registerParticipant(familyEvent, john);
 participantManager.registerParticipant(familyEvent, jane);
 
+// Események listázása
+console.log("Események");
+console.log(eventManager.listEvents());
+
+
 
