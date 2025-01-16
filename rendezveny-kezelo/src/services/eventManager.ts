@@ -1,11 +1,13 @@
 // RENDEZVÉNYEK LÉTREHOZÁSA, TÖRLÉSE ÉS SZŰRÉSE //
 
+import { LogMethod } from "../decorators/logMethodDecorator";
 import { Event } from "../models/event";
 import { EventType } from "../models/eventType";
 
 export class EventManager {
   private events: Event[] = [];
 
+  @LogMethod
   createEvent(name: string, location: string, date: Date, type: EventType): Event {
     const event = new Event(name, location, date, type);
     this.events.push(event);
@@ -16,6 +18,7 @@ export class EventManager {
     return this.events;
   }
 
+  @LogMethod
   deleteEvent(name: string): boolean {
     const index = this.events.findIndex(e => e.name === name);
     if (index !== -1) {
