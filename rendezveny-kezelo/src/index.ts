@@ -25,5 +25,9 @@ participantManager.registerParticipant(familyEvent, jane);
 console.log("Események");
 console.log(eventManager.listEvents());
 
+// Résztvevők listázása
+console.log("Résztvevők");
+console.log(familyEvent.participants);
+
 
 
