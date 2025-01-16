@@ -29,5 +29,10 @@ console.log(eventManager.listEvents());
 console.log("Résztvevők");
 console.log(familyEvent.participants);
 
+// Esemény törlése
+eventManager.deleteEvent("Családi Ünnepség");
+console.log("Események a törlés után:");
+console.log(eventManager.listEvents());
+
 
 
