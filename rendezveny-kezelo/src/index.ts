@@ -14,4 +14,11 @@ const familyEvent = eventManager.createEvent(
   EventType.FamilyGathering
 );
 
+// Résztvevők hozzáadása
+const john = new Participant("John Doe", "john.doe@example.com");
+const jane = new Participant("Jane Smith", "jane.smith@example.com");
+
+participantManager.registerParticipant(familyEvent, john);
+participantManager.registerParticipant(familyEvent, jane);
+
 
